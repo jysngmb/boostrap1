@@ -1,0 +1,203 @@
+.white-mode {
+  text-decoration: none;
+  padding: 5px 30px;
+  background-color: rgb(238, 138, 23);
+  border-radius: 3px;
+  color: rgb(255, 255, 255);
+  transition: 0.35s ease-in-out;
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+}
+
+.title {
+  color: black;
+  text-align: center;
+  font-size: 3.5rem;
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: white;
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 700;
+}
+
+body {
+  background: #fce9d3;
+  padding: 30px 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.pricingTable {
+  text-align: center;
+  background: #fff;
+  margin: 0 -15px;
+  filter: drop-shadow(0 0 5px rgba(152, 147, 147, 0.901));
+  padding-bottom: 40px;
+  border-radius: 15px;
+  color: #ded4ca;
+  transform: scale(0.96);
+  transition: all 0.5s ease 0s;
+}
+
+.pricingTable:hover {
+  transform: scale(1);
+  z-index: 0.5;
+}
+
+.pricingTable .pricingTable-header {
+  padding: 25px 0;
+  background: #f9f7f5;
+  border-radius: 10px 10px 15% 15%;
+  transition: all 0.5s ease 0s;
+}
+
+.pricingTable:hover .pricingTable-header {
+  background: #ff9624;
+}
+
+.pricingTable .pricingTable-header i {
+  font-size: 50px;
+  color: #858c9a;
+  margin-bottom: 10px;
+  transition: all 0.5s ease 0s;
+}
+
+.pricingTable .price-value {
+  font-size: 35px;
+  color: #ff9624;
+  transition: all 0.5s ease 0s;
+}
+
+.pricingTable .month {
+  display: block;
+  font-size: 14px;
+  color: #717171;
+}
+/*when cursor place in pricingtable*/
+.pricingTable:hover .month,
+.pricingTable:hover .price-value,
+.pricingTable:hover .pricingTable-header i,
+.pricingTable:hover .headingpro,
+.pricingTable:hover .headingentre,
+.pricingTable:hover .headingmost,
+.pricingTable:hover .headingorga {
+  color: #fff;
+}
+
+.pricingTable .heading {
+  margin-top: 15px;
+  font-size: 24px;
+  color: #ff9624;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.pricingTable .headingmost {
+  font-size: 15px;
+  color: #ff9624;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.pricingTable .headingentre {
+  font-size: 15px;
+  color: #7a00b3;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.pricingTable .headingorga {
+  font-size: 15px;
+  color: #2d19ff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.pricingTable .headingpro {
+  font-size: 15px;
+  color: #ff41df;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.pricingTable .pricing-content ul {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.pricingTable .pricing-content ul li {
+  line-height: 30px;
+  color: #717171;
+}
+
+.pricingTable .pricingTable-signup a {
+  display: inline-block;
+  font-size: 15px;
+  color: #fff;
+  padding: 10px 35px;
+  border-radius: 20px;
+  background: #fa9b36;
+  text-transform: uppercase;
+  transition: all 0.3s ease 0s;
+}
+
+.pricingTable .pricingTable-signup a:hover {
+  box-shadow: 0 0 10px #fa9b36;
+}
+
+.pricingTable.blue .heading,
+.pricingTable.blue .price-value {
+  color: #2d19ff;
+}
+
+.pricingTable.blue .pricingTable-signup a,
+.pricingTable.blue:hover .pricingTable-header {
+  background: #2d19ff;
+}
+
+.pricingTable.blue .pricingTable-signup a:hover {
+  box-shadow: 0 0 10px #2d19ff;
+}
+
+.pricingTable.magen .heading,
+.pricingTable.magen .price-value {
+  color: #ff41df;
+}
+
+.pricingTable.magen .pricingTable-signup a,
+.pricingTable.magen:hover .pricingTable-header {
+  background: #ff41df;
+}
+
+.pricingTable.magen .pricingTable-signup a:hover {
+  box-shadow: 0 0 10px #ff41df;
+}
+
+.pricingTable.violet .heading,
+.pricingTable.violet .price-value {
+  color: #7a00b3;
+}
+
+.pricingTable.violet .pricingTable-signup a,
+.pricingTable.violet:hover .pricingTable-header {
+  background: #7a00b3;
+}
+
+.pricingTable.violet .pricingTable-signup a:hover {
+  box-shadow: 0 0 10px #7a00b3;
+}
+
+.pricingTable.blue:hover .price-value,
+.pricingTable.violet:hover .price-value,
+.pricingTable.magen:hover .price-value {
+  color: #fff;
+}
+
+@media screen and (max-width: 990px) {
+  .pricingTable {
+    margin: 0 0 20px;
+  }
+}
